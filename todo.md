@@ -1,10 +1,10 @@
 # to do
 
-- [ ] hw1 readme
+- [ ] update hw1 readme
 - [ ] update hw2 readme. include terminal commands and process
-- [ ] leddec original file
+- [x] leddec original file
 - [ ] shrink leddec gif, update readme
-- [ ] create leddec modifications directory
+- [x] create leddec modifications directory
 - [ ] create super hexcount
 - [ ] shrink hexcount gif, elaborate and update readme
 - [ ] modify hex4count into hex8count
