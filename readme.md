@@ -26,6 +26,7 @@
     - Lab 2 Project 1: Four Digit Hex Counter ([hex4count](./lab2/hex4count))
 	- Lab 2 Modifications: 
 	  - Eight Digit Hex Counter ([hex8count](./lab2/hex8count))
+	  - Choice Digit Hex Counter ([hexchoicecount](./lab2/hexchoicecount))
   - Also create memory configuration files so that the FPGA board can boot the VHDL program from memory.
   
 - Lab 3 (vgaball)
