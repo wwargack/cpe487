@@ -18,4 +18,4 @@ set_property -dict {PACKAGE_PIN T8 IOSTANDARD LVCMOS33} [get_ports {dig[2]}]
 
 PACKAGE_PINs modifiedd from U12, U11, V10 to U18, R13, T8 respectively.
 
-Correspoonds to switches 13, 14, 15 to 6, 7, 8 respectively.
+Corresponds to switches 13, 14, 15 to 6, 7, 8 respectively.
