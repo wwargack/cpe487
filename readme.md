@@ -22,7 +22,7 @@
 	  - Hexcount LED Decoder Combination ([super hexcount](./lab1/hexcount/super))
 
 - Lab 2 ([hex4count](./lab2/hex4count))
-  - Open Vivaado and create a VHDL project to synthesize, implement, generate bitstream, and program FPGA for:
+  - Open Vivado and create a VHDL project to synthesize, implement, generate bitstream, and program FPGA for:
     - Lab 2 Project 1: Four Digit Hex Counter ([hex4count](./lab2/hex4count))
 	- Lab 2 Modifications: 
 	  - Eight Digit Hex Counter ([hex8count](./lab2/hex8count))
