@@ -5,7 +5,7 @@
 - Assignment 1 ([hw1](./hw1))
   - Find a VHDL model not included in the textbook.
   - Add a comment citing the source and upload the file to your GitHub Repository.
-[//]: #  - sqrt8.vhdl [source](https://www.csee.umbc.edu/portal/help/VHDL/samples/sqrt8.html)  
+[//]: #- sqrt8.vhdl [source](https://www.csee.umbc.edu/portal/help/VHDL/samples/sqrt8.html)  
   
 - Assignment 2 ([hw2](./hw2))
   - Develop a test bench for your VHDL file from assignment 1.
