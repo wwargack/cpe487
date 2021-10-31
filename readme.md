@@ -58,3 +58,8 @@ Each addition to your data plan costs $5.00 more per month and adds 50GB to your
 - According to a GitHub [documentation](https://docs.github.com/en/repositories/working-with-files/managing-large-files/removing-files-from-git-large-file-storage) on removing files from Git LFS, the only easy way I've seen to remove files from Git LFS is to delete the repository the files are a part of.
 - Git LFS still stores files that are in repository histories, and I thought that deleting my repo and pushing all my old files would be faster than doing the research and spending time trying to figure out how to delete files from my repo history.
 - This repo is technically the new one but it is now indistinguishable from the old one in terms of right before the old one was deleted with the exception of no Git LFS and no large gif files. 
+
+- I would not recommend using Git LFS to store inconsequential files unless you are willing to pay for a bigger storage plan.
+  - I think Git LFS could work for a short term solution (provided you know how to correctly remove files from your LFS storage without needing to delete your whole repository).
+  - However I do not think Git LFS is worth it in the long term unless you pay.
+  - It is especially not worth using if you need to delete your repository to free up space like me.
