@@ -40,9 +40,9 @@
 
 - GitHub does not allow you to upload a file greater than 100MB to your repository.
 To get around this, it is possible to use [Git LFS](https://git-lfs.github.com/) (Git Large File Storage).
-  - Once per user account, run 'git lfs install' in the terminal.
-  - In each Git repository where you want to use Git LFS, select the file types you'd like Git LFS to manage (or directly edit .gitattributes).  'git lfs track "*.gif"'
-  - Then make sure .gitattributes is tracked.  'git add .gitattributes'
+  - Once per user account, run `git lfs install` in the terminal.
+  - In each Git repository where you want to use Git LFS, select the file types you'd like Git LFS to manage (or directly edit .gitattributes).  `git lfs track "*.gif"`
+  - Then make sure .gitattributes is tracked.  `git add .gitattributes`
   - Git LFS now works for your repository and you can commit and push to GitHub like normal.
 
 - For a basic account, Git LFS has a maximum storage and bandwidth size of 1GB.
@@ -54,7 +54,7 @@ Each addition to your data plan costs $5.00 more per month and adds 50GB to your
 - The only thing that I had stored was a large unedited gif file. It's not too important, and I can figure out how to edit it to reduce it's file size.
 
   - I tried removing the gif file and .gitattribute files from my repository and the file was still being stored.
-  - I tried 'git lfs uninstall' and the file was still being stored.
+  - I tried `git lfs uninstall` and the file was still being stored.
 - According to a GitHub [documentation](https://docs.github.com/en/repositories/working-with-files/managing-large-files/removing-files-from-git-large-file-storage) on removing files from Git LFS, the only easy way I've seen to remove files from Git LFS is to delete the repository the files are a part of.
 - Git LFS still stores files that are in repository histories, and I thought that deleting my repo and pushing all my old files would be faster than doing the research and spending time trying to figure out how to delete files from my repo history.
 - This repo is technically the new one but it is now indistinguishable from the old one in terms of right before the old one was deleted with the exception of no Git LFS and no large gif files. 
