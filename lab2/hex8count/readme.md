@@ -1,5 +1,7 @@
 # 8 Digit Hex Counter Modification
 
+!["hex8count.gif"](./hex8count.gif)
+
 Line 19 of hexcount.vhd in hex4count
 `count : OUT STD_LOGIC_VECTOR (15 DOWNTO 0);`
 
