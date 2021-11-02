@@ -6,7 +6,7 @@ The display digit counts up from 0 to F in roughly 2.67 seconds.
 
 Use switches 13, 14, and 15 (U12, U11, V10) to change the display by 1, 2, and 4 segments respectively.
 
-!["super hexcount.gif](./superhexcount.gif)
+![super hexcount.gif](./superhexcount.gif)
 
 ---
 
