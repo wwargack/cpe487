@@ -6,6 +6,8 @@ The display digit counts up from 0 to F in roughly 2.67 seconds.
 
 Use switches 13, 14, and 15 (U12, U11, V10) to change the display by 1, 2, and 4 segments respectively.
 
+!["super hexcount.gif](./superhexcount.gif)
+
 ---
 
 Differences between hexcount and super hexcount include:
@@ -35,3 +37,4 @@ set_property -dict {PACKAGE_PIN U12 IOSTANDARD LVCMOS33} [get_ports {dig[0]}]
 set_property -dict {PACKAGE_PIN U11 IOSTANDARD LVCMOS33} [get_ports {dig[1]}]
 set_property -dict {PACKAGE_PIN V10 IOSTANDARD LVCMOS33} [get_ports {dig[2]}]
 ```
+so that hexcount is able to track switches 13, 14, and 15 to change the display digit.
