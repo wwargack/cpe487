@@ -6,7 +6,8 @@
 - [x] shrink leddec gif
 - [ ] update lab1 readme
 - [x] create leddec modifications directory
-- [ ] create super hexcount
+- [x] create super hexcount
+- [ ] edit and upload super hexcount gif
 - [x] shrink hexcount gif
 - [ ] elaborate and updaate lab2 readme
 - [x] modify hex4count into hex8count
