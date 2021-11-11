@@ -1,6 +1,6 @@
 # Square Root 8 Bits
 
-[Source](https://www.csee.umbc.edu/portal/help/VHDL/samples/sqrt8.vhdl): https://www.csee.umbc.edu/portal/help/VHDL/samples/sqrt8.vhdl
+Source: https://www.csee.umbc.edu/portal/help/VHDL/samples/sqrt8.vhdl
 
 Takes an unsigned 8 bit integer input and computes the unsigned 4 bit integer square root of the input.
 
