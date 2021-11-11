@@ -7,23 +7,24 @@ Objective: Build a single-digit (4 bit) hexadecimal number to display its value 
 ![Seven Segment Display png](./7segment.png)
 
 Seven segment is represented as "ABCDEFG" where a 1 is off and a 0 is on.
-
-- 0000001 = 0
-- 1001111 = 1
-- 0010010 = 2
-- 0000110 = 3
-- 1001100 = 4
-- 0100101 = 5
-- 0100000 = 6
-- 0001111 = 7
-- 0000000 = 8
-- 0001100 = 9
-- 0001000 = A
-- 1100000 = b
-- 0110001 = C
-- 1000010 = d
-- 0110000 = E
-- 0111000 = F
+```
+0000001 = 0
+1001111 = 1
+0010010 = 2
+0000110 = 3
+1001100 = 4
+0100101 = 5
+0100000 = 6
+0001111 = 7
+0000000 = 8
+0001100 = 9
+0001000 = A
+1100000 = b
+0110001 = C
+1000010 = d
+0110000 = E
+0111000 = F
+```
 
 ## Single Digit Hex Counter \([hexcount](./hexcount)\)
 
