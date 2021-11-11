@@ -44,5 +44,5 @@ If the argument `--ieee=synopsys` is not used in the above commands, you will ge
 ```
 sqrt8.vhdl:87:10: unit "std_logic_textio" not found in library "ieee"
 sqrt8.vhdl:87:10:  (use --ieee=synopsys or --std=08 for this non-standard synopsys package)
-sqrt8.chdl:93:22: entity 'sqrt8' was not analyzed
+sqrt8.vhdl:93:22: entity 'sqrt8' was not analyzed
 ```
