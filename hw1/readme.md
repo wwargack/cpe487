@@ -7,3 +7,5 @@ Takes an unsigned 8 bit integer input and computes the unsigned 4 bit integer sq
 For example
 - sqrt(00000100) = 0010   sqrt(4)=2
 - sqrt(01000000) = 1000   sqrt(64)=8
+
+See [hw2](../hw2) to see an output waveform of sqrt8.vhdl and a text file of the outputs.
