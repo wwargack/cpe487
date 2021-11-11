@@ -27,20 +27,18 @@ In terminal, use the following commands:
 `ghdl -e --ieee=synopsys sqrt8`
 
 To get the .vcd file, use:
-
 `ghdl -r --ieee=synopsys --stop-time=512ns > sqrt8.vcd`
 
 To get the .out file, use:
-
 `ghdl -r --ieee=synopsys --stop-time=512ns > sqrt8.out`
 
 To view the .vcd file, use GTKWave:
-
 `gtkwave ./sqrt8.vcd`
 
 To view the .out file, use:
-
 `cat sqrt8.out`
+
+---
 
 If the argument `--ieee=synopsys` is not used in the above commands, you will get an error stating
 ```
