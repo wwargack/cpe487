@@ -1,17 +1,37 @@
-# sqrt8 testbench
+# Testbench of Square Root 8 Bits [hw1](../hw1)
 
-testbench at the end of sqrt8.vhdl
+Testbench at the end of [sqrt8.vhdl](./sqrt8.vhdl)
 
-source: https://www.csee.umbc.edu/portal/help/VHDL/samples/sqrt8.vhdl"
+[Source](https://www.csee.umbc.edu/portal/help/VHDL/samples/sqrt8.vhdl): https://www.csee.umbc.edu/portal/help/VHDL/samples/sqrt8.vhdl
+
+---
 
 Finding the square root of numbers from 0 to 255 with 2ns delay. Runs for 512ns.
 
-sqrt8.vcd shows waveform of the square root.
+[sqrt8.vcd](./sqrt8.vcd) shows waveform of the square root.
 
-!["sqrt8simplewave.png"](./sqrt8simplewave.png)
+![sqrt8simplewave.png](./sqrt8simplewave.png)
 
-sqrt8.out lists inputs and outputs from the square root function.
+[sqrt8.out](./sqrt8.out) lists inputs and outputs from the square root function.
 
-!["sqrt8output.png"](./sqrt8output.png)
+![sqrt8output.png](./sqrt8output.png)
 
+---
 
+### How to get .vcd and .out files
+
+In terminal, use the following commands:
+`ghdl -a --ieee=synopsys sqrt8.vhdl`
+`ghdl -e --ieee=synopsys sqrt8`
+
+To get the .vcd file, use:
+`ghdl -r --ieee=synopsys --stop-time=512ns > sqrt8.vcd`
+
+To get the .out file, use:
+`ghdl -r --ieee=synopsys --stop-time=512ns > sqrt8.out`
+
+To view the .vcd file, use GTKWave:
+`gtkwave ./sqrt8.vcd`
+
+To view the .out file, use:
+`cat sqrt8.out`
