@@ -45,7 +45,7 @@
       - Operations
         - Addition
         - Subtraction
-	- Multiplication
+        - Multiplication
       - Leading Zero Suppression
   - More modifications included in [Final Project](./proj)
 
