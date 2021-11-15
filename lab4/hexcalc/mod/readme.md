@@ -47,6 +47,9 @@ Created a signal to track whether the addition, subtraction, or multiplication b
 ```
 
 Created a 64 bit signal to handle the multiplication of 2 32 bit numbers (operand * accumulator)
+```
+	SIGNAL sf : STD_LOGIC (63 DOWNTO 0);
+```
 
 Addded an if statement to figure out the current operation.
 ```
