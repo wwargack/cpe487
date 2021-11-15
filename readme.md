@@ -16,26 +16,55 @@
 - Lab 1 ([leddec](./lab1/leddec), [hexcount](./lab1/hexcount))
   - Open Vivado and create VHDL projects to synthesize, implement, generate bitstream, and program FPGA for:
     - Lab 1 Project 1: LED Decoder ([leddec](./lab1/leddec))
-	- Lab 1 Project 2: Single Digit Hex Counter ([hexcount](./lab1/hexcount))
-	- Lab 1 Modifications:
-	  - LED Decoder Switch Change ([leddec mod](./lab1/leddec/mod))
-	  - Hexcount LED Decoder Combination ([super hexcount](./lab1/hexcount/super))
+    - Lab 1 Project 2: Single Digit Hex Counter ([hexcount](./lab1/hexcount))
+    - Lab 1 Modifications:
+      - LED Decoder Switch Change ([leddec mod](./lab1/leddec/mod))
+      - Hexcount LED Decoder Combination ([super hexcount](./lab1/hexcount/super))
 
 - Lab 2 ([hex4count](./lab2/hex4count))
   - Open Vivado and create a VHDL project to synthesize, implement, generate bitstream, and program FPGA for:
     - Lab 2 Project 1: Four Digit Hex Counter ([hex4count](./lab2/hex4count))
-	- Lab 2 Modifications: 
-	  - Eight Digit Hex Counter ([hex8count](./lab2/hex8count))
-	  - Choice Digit Hex Counter ([hexchoicecount](./lab2/hexchoicecount))
+    - Lab 2 Modifications: 
+      - Eight Digit Hex Counter ([hex8count](./lab2/hex8count))
+      - Choice Digit Hex Counter ([hexchoicecount](./lab2/hexchoicecount))
   - Also create memory configuration files so that the FPGA board can boot the VHDL program from memory.
   
-- Lab 3 (vgaball)
+- Lab 3 ([vgaball](./lab3/vgaball))
+  - Open Vivado and create a VHDL project to synthesize, implemet, generate bitstream, and program FPGA for:
+    - Lab 3 Project 1: VGA Ball Display ([vgaball](./lab3/vgaball))
+    - Lab 3 Modifications ([lab3 mod](./lab3/vgaball/mod))
+    
+- Lab 4 ([hexcalc](./lab4/hexcalc))
+  - Open Vivado and create a VHDL project to synthesize, implemet, generate bitstream, and program FPGA for:
+    - Lab 4 Project 1: Hexadecimal Calculator ([hexcalc](./lab4/hexcalc))
+    - Lab 4 Modifications ([lab4 mod](./lab4/hexcalc/mod)):
+      - 8 Digit Hex Display (32 Bits)
+      - Operations
+        - Subtraction
+  - More modifications included in [Final Project](./proj)
 
-- Lab 4 (hexcalc)
+- Lab 5 ([siren](./lab5/siren))
 
-- Lab 5 (siren)
+- Lab 6 ([pong](./lab6/pong))
 
-- Lab 6 (pong)
+- Final Project ([proj](./proj))
+  - Hexadecimal Calculator
+  - Operations
+    - Addition
+    - Subtraction
+    - Multiplication (not implemeted yet)
+      - Digit Limiter (not implemented yet)
+    - Division (not implemeted yet)
+    - Square Root (not implemented yet)
+    - Exponents (not implemented yet)
+    - Modulo (not implemented yet)
+    - Logarithm (not implemented yet)
+  - Continuous Operation/No "Clear" Needed (not implemented yet
+  - Overflow Error (not implemented yet)
+    - Tracker
+    - Display "OFL Err"
+  - Decimal Switch (not implemented yet)
+  - more to be added
 
 ## Git LFS Issue
 
