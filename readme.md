@@ -37,10 +37,16 @@
 - Lab 4 ([hexcalc](./lab4/hexcalc))
   - Open Vivado and create a VHDL project to synthesize, implemet, generate bitstream, and program FPGA for:
     - Lab 4 Project 1: Hexadecimal Calculator ([hexcalc](./lab4/hexcalc))
+      - 4 Digit Hex Display (16 Bits)
+      - Operations
+        - Addition
     - Lab 4 Modifications ([lab4 mod](./lab4/hexcalc/mod)):
       - 8 Digit Hex Display (32 Bits)
       - Operations
+        - Addition
         - Subtraction
+	- Multiplication
+      - Leading Zero Suppression
   - More modifications included in [Final Project](./proj)
 
 - Lab 5 ([siren](./lab5/siren))
@@ -52,14 +58,15 @@
   - Operations
     - Addition
     - Subtraction
-    - Multiplication (not implemeted yet)
-      - Digit Limiter (not implemented yet)
+    - Multiplication
+      - Digit Limiter to prevent overflow (not implemented yet)
     - Division (not implemeted yet)
     - Square Root (not implemented yet)
     - Exponents (not implemented yet)
     - Modulo (not implemented yet)
     - Logarithm (not implemented yet)
-  - Continuous Operation/No "Clear" Needed (not implemented yet
+  - Leading Zero Suppression
+  - Continuous Operation/No "Clear" Needed (not implemented yet)
   - Overflow Error (not implemented yet)
     - Tracker
     - Display "OFL Err"
