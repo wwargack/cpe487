@@ -46,6 +46,7 @@ ARCHITECTURE Behavioral OF hexcalc IS
 	ENTER_OP, SHOW_RESULT); -- state machine states
 	SIGNAL pr_state, nx_state : state; -- present and next states
 	SIGNAL op : STD_LOGIC_VECTOR (1 DOWNTO 0); --signal to track operations. + is 0, - is 1, * is 2
+        SIGNAL sf : STD_LOGIC (63 downto 0);
 BEGIN
 	ck_proc : PROCESS (clk_50MHz)
 	BEGIN
@@ -96,9 +97,9 @@ BEGIN
 					ELSIF bt_minus = '1' THEN
 					    op <= "01";
 					    nx_state <= START_OP;
---					ELSIF bt_multiply = '1' THEN
---					    op <= "10";
---					    nx_state <= START_OP;
+					ELSIF bt_multiply = '1' THEN
+					    op <= "10";
+					    nx_state <= START_OP;
 					ELSE
 						nx_state <= ENTER_ACC;
 					END IF;
@@ -127,8 +128,9 @@ BEGIN
 						  nx_acc <= acc + operand;
 					   ELSIF op = "01" THEN
 					      nx_acc <= acc - operand;
---					   ELSIF op = "10" THEN
---					      nx_acc <= acc * operand;
+					   ELSIF op = "10" THEN
+                                              sf <= acc * operand;
+					      nx_acc <= sf (31 downto 0);
 					   nx_state <= SHOW_RESULT;
 					   END IF;
 					ELSIF kp_hit = '1' THEN
