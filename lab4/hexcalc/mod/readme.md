@@ -43,46 +43,46 @@ hexcalc.xdc
 
 Created a signal to track whether the addition, subtraction, or multiplication buttons were hit to be able to choose what operation to do after hitting the equals button.
 ```
-	SIGNAL op : STD_LOGIC_VECTOR (1 DOWNTO 0); --signal to track operations. + is 0, - is 1, * is 2
+SIGNAL op : STD_LOGIC_VECTOR (1 DOWNTO 0); --signal to track operations. + is 0, - is 1, * is 2
 ```
 
 Created a 64 bit signal to handle the multiplication of 2 32 bit numbers (operand * accumulator)
 ```
-	SIGNAL mul_val : STD_LOGIC_VECTOR (63 DOWNTO 0); --signal to hoold the 64 but multiplication value when multiplying two 32 bit inputs
+SIGNAL mul_val : STD_LOGIC_VECTOR (63 DOWNTO 0); --signal to hold the 64 but multiplication value when multiplying two 32 bit inputs
 ```
 
 Addded an if statement to figure out the current operation.
 ```
-				WHEN ENTER_ACC => -- waiting for next digit in 1st operand entry
-					IF kp_hit = '1' THEN
-						nx_acc <= acc(27 DOWNTO 0) & kp_value;
-						nx_state <= ACC_RELEASE;
-					ELSIF bt_plus = '1' THEN
-					    op <= "00";
-						nx_state <= START_OP;
-					ELSIF bt_minus = '1' THEN
-					    op <= "01";
-					    nx_state <= START_OP;
-					ELSIF bt_multiply = '1' THEN
-					    op <= "10";
-					    nx_state <= START_OP;
-					ELSE
-						nx_state <= ENTER_ACC;
-					END IF;
+WHEN ENTER_ACC => -- waiting for next digit in 1st operand entry
+	IF kp_hit = '1' THEN
+		nx_acc <= acc(27 DOWNTO 0) & kp_value;
+		nx_state <= ACC_RELEASE;
+	ELSIF bt_plus = '1' THEN
+	    op <= "00";
+		nx_state <= START_OP;
+	ELSIF bt_minus = '1' THEN
+	    op <= "01";
+	    nx_state <= START_OP;
+	ELSIF bt_multiply = '1' THEN
+	    op <= "10";
+	    nx_state <= START_OP;
+	ELSE
+		nx_state <= ENTER_ACC;
+	END IF;
 ```
 
 Perform addition, subtraction, or multiplication when the equals button is pushed. If multiplication was performed, cut off overflow past 32 bits.
 ```
-					IF bt_eq = '1' THEN
-					   IF op = "00" THEN
-						  nx_acc <= acc + operand;
-					   ELSIF op = "01" THEN
-					      nx_acc <= acc - operand;
-					   ELSIF op = "10" THEN
-                                              mul_val <= acc * operand;
-					      nx_acc <= mul_val (31 downto 0); -- ignore bits overflowed past 32 bits for now. working on a solution to this.
-					   nx_state <= SHOW_RESULT;
-					   END IF
+IF bt_eq = '1' THEN
+   IF op = "00" THEN
+	nx_acc <= acc + operand;
+   ELSIF op = "01" THEN
+   	nx_acc <= acc - operand;
+   ELSIF op = "10" THEN
+   	mul_val <= acc * operand;
+	nx_acc <= mul_val (31 downto 0); -- ignore bits overflowed past 32 bits for now. working on a solution to this.
+	nx_state <= SHOW_RESULT;
+END IF
 ```
 
 ![hexcalcmodplusminus.gif](./hexcalcmodplusminus.gif)
