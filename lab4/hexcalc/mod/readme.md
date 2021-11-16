@@ -48,7 +48,7 @@ Created a signal to track whether the addition, subtraction, or multiplication b
 
 Created a 64 bit signal to handle the multiplication of 2 32 bit numbers (operand * accumulator)
 ```
-	SIGNAL sf : STD_LOGIC (63 DOWNTO 0);
+	SIGNAL mul_val : STD_LOGIC_VECTOR (63 DOWNTO 0); --signal to hoold the 64 but multiplication value when multiplying two 32 bit inputs
 ```
 
 Addded an if statement to figure out the current operation.
@@ -79,8 +79,8 @@ Perform addition, subtraction, or multiplication when the equals button is pushe
 					   ELSIF op = "01" THEN
 					      nx_acc <= acc - operand;
 					   ELSIF op = "10" THEN
-                                              sf <= acc * operand;
-					      nx_acc <= sf (31 downto 0);
+                                              mul_val <= acc * operand;
+					      nx_acc <= mul_val (31 downto 0); -- ignore bits overflowed past 32 bits for now. working on a solution to this.
 					   nx_state <= SHOW_RESULT;
 					   END IF
 ```
