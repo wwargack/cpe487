@@ -46,7 +46,7 @@ ARCHITECTURE Behavioral OF hexcalc IS
 	ENTER_OP, SHOW_RESULT); -- state machine states
 	SIGNAL pr_state, nx_state : state; -- present and next states
 	SIGNAL op : STD_LOGIC_VECTOR (1 DOWNTO 0); --signal to track operations. + is 0, - is 1, * is 2
-        SIGNAL sf : STD_LOGIC (63 downto 0);
+	SIGNAL mul_val : STD_LOGIC_VECTOR (63 DOWNTO 0); -- signal to hold the 64 bit multiplication value when multiplying two 32 bit inputs.
 BEGIN
 	ck_proc : PROCESS (clk_50MHz)
 	BEGIN
@@ -129,8 +129,9 @@ BEGIN
 					   ELSIF op = "01" THEN
 					      nx_acc <= acc - operand;
 					   ELSIF op = "10" THEN
-                                              sf <= acc * operand;
-					      nx_acc <= sf (31 downto 0);
+					      mul_val <= acc * operand;
+					      nx_acc <= mul_val (31 DOWNTO 0); -- ignore bits overflowed past 32 bits for now. working on a solution to this.
+                          
 					   nx_state <= SHOW_RESULT;
 					   END IF;
 					ELSIF kp_hit = '1' THEN

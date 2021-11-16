@@ -11,6 +11,8 @@ END leddec32;
 
 ARCHITECTURE Behavioral OF leddec32 IS
 	SIGNAL data8 : STD_LOGIC_VECTOR (3 DOWNTO 0); -- binary value of current digit
+	SIGNAL ofl : STD_LOGIC_VECTOR (0 DOWNTO 0); -- overflow(1) or not(0)
+	signal ofl_dig : std_logic_vector (3 DOWNTO 0); -- tracking digit of overflow display
 BEGIN
 	-- Select digit data to be displayed in this mpx period
 	data8 <= data(3 DOWNTO 0) WHEN dig = "000" ELSE -- digit 0
@@ -40,6 +42,9 @@ BEGIN
 	       "0110000" WHEN data8 = "1110" ELSE -- E
 	       "0111000" WHEN data8 = "1111" ELSE -- F
 	       "1111111";
+	       
+	
+	
 	-- Turn on anode of 7-segment display addressed by 3-bit digit selector dig. Suppress leading 0s.
 	anode <= "11111110" WHEN dig = "000" and data /= X"00000000" ELSE -- 0
 	         "11111101" WHEN dig = "001" and data (31 DOWNTO 4) /= X"0000000" ELSE -- 1
