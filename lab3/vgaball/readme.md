@@ -1,6 +1,6 @@
 # VGA Ball
 
-Displays a ball that bounces on the edges of the screen akin to a "dvd logo".
+Displays a ball that bounces on the edges of the screen akin to a "[dvd logo](https://www.youtube.com/watch?v=5mGuCdlCcNM)".
 
 Uses the built in clock to refresh the screen and convert it to a VGA display.
 
