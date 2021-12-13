@@ -54,24 +54,18 @@
 - Lab 6 ([pong](./lab6/pong))
 
 - Final Project ([proj](./proj))
-  - Hexadecimal Calculator
+  - Walter's Advanced Hexadecimal Calculator
   - Operations
     - Addition
     - Subtraction
     - Multiplication
-      - Digit Limiter to prevent overflow (not implemented yet)
-    - Division (not implemeted yet)
-    - Square Root (not implemented yet)
-    - Exponents (not implemented yet)
-    - Modulo (not implemented yet)
-    - Logarithm (not implemented yet)
+    - Division
+    - Bitwise AND
+    - Bitwise NAND
+    - Bitwise OR
+    - Bitwise XOR
   - Leading Zero Suppression
-  - Continuous Operation/No "Clear" Needed (not implemented yet)
-  - Overflow Error (not implemented yet)
-    - Tracker
-    - Display "OFL Err"
-  - Decimal Switch (not implemented yet)
-  - more to be added
+
 
 ## Git LFS Issue
 
